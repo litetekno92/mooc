@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'models/category_model.dart';
 import 'services/category_services.dart';
-import 'dart:async';
 
 class MyHomePage extends StatelessWidget {
   final String title;
@@ -36,9 +35,22 @@ class MyHomePage extends StatelessWidget {
                 title: Text("Second"),
                 onTap: () {
                   Navigator.pop(context);
-                }),
-            ]
-          ), 
+                },
+                ListView(
+              children: categories
+                  .map((element) => Card(
+                        child: Column(
+                          children: <Widget>[
+                              Text(element.name,
+                                style: TextStyle(color: Colors.deepPurple))
+                          ],
+                        ),
+                      ))
+                  .toList()),
+        ]),
+              )
+            ],
+          ),
         ),
         body: new DefaultTabController(
           length: 3,

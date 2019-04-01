@@ -10,7 +10,7 @@ Future<String> _loadACategoryAsset() async {
 Future loadCategory() async {
   String jsonString = await _loadACategoryAsset();
   final jsonResponse = json.decode(jsonString);
-  List<Category> categories = categoryFromJson(jsonString);
+  List<Category> categories = categoryFromJson(jsonResponse);
   return categories;
   // print(category.id);
 }
