@@ -5,7 +5,6 @@ import 'dart:async';
 
 class MyHomePage extends StatelessWidget {
   final String title;
-  var categories =  loadCategory();
 
   MyHomePage({Key key, this.title}) : super(key: key);
 
@@ -36,9 +35,10 @@ class MyHomePage extends StatelessWidget {
                 title: Text("Second"),
                 onTap: () {
                   Navigator.pop(context);
-                }),
-            ]
-          ), 
+                },
+              )
+            ],
+          ),
         ),
         body: new DefaultTabController(
           length: 3,
