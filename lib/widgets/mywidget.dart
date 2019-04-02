@@ -43,7 +43,7 @@ class _MyWidgetState extends State<MyWidget> {
 
     //throw new Exception("Danger Will Robinson!!!");
 
-    await new Future.delayed(new Duration(seconds: 5));
+    await new Future.delayed(new Duration(seconds: 3));
 
     return values;
   }
