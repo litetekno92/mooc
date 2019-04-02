@@ -18,32 +18,7 @@ class MyHomePage extends StatelessWidget {
         drawer: Drawer(
           child: Column(
             children: <Widget>[
-              Container( child:
-              DrawerHeader(
-                child: Text(
-                  "Hello Andy!!",
-                  textAlign: TextAlign.justify,
-                  textScaleFactor: 2.0,
-                ),
-                decoration: BoxDecoration(color: Colors.green),
-              ),
-              ),
-              Container( child:
-              ListTile(
-                title: Text("First"),
-                onTap: () {
-                  Navigator.pop(context);
-                },
-              ),
-              ),
-              Container( child:
-              ListTile(
-                title: Text("Second"),
-                onTap: () {
-                  Navigator.pop(context);
-                },
-              ),
-              ),
+              
               Container( child:
               MyWidget(),
               ),
