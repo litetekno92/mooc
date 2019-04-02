@@ -26,13 +26,12 @@ class _MyWidgetState extends State<MyWidget> {
       },
     );
 
-    // return new Scaffold(
-    //   appBar: new AppBar(
-    //     title: new Text("Widget Page"),
-    //   ),
-    //   body: futureBuilder,
-    // );
-    return new Container(child: futureBuilder);
+    return new Scaffold(
+      appBar: new AppBar(
+        title: new Text("Widget Page"),
+      ),
+      body: futureBuilder,
+    );
   }
 
   Future<List<String>> _getData() async {
