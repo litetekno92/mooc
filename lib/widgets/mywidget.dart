@@ -1,12 +1,13 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatefulWidget {
-  @override
-  _MyWidgetState createState() => new _MyWidgetState();
-}
+// class MyWidget extends StatefulWidget {
+//   @override
+//   _MyWidgetState createState() => new _MyWidgetState();
+// }
 
-class _MyWidgetState extends State<MyWidget> {
+// class _MyWidgetState extends State<MyWidget> {
+ class MyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -36,6 +37,8 @@ class _MyWidgetState extends State<MyWidget> {
   }
 
   Future<List<String>> _getData() async {
+    // final rvalues = new List<String>();
+    // if (rvalues !=null) return rvalues;
     var values = new List<String>();
     values.add("Horses");
     values.add("Goats");
@@ -45,6 +48,8 @@ class _MyWidgetState extends State<MyWidget> {
 
     await new Future.delayed(new Duration(seconds: 3));
 
+    // rvalues = values;
+ 
     return values;
   }
 

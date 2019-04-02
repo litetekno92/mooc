@@ -16,9 +16,8 @@ class MyHomePage extends StatelessWidget {
           title: Text(title),
         ),
         drawer: Drawer(
-          child: Column(
+          child: ListView(
             children: <Widget>[
-              Container( child:
               DrawerHeader(
                 child: Text(
                   "Hello Andy!!",
@@ -27,28 +26,20 @@ class MyHomePage extends StatelessWidget {
                 ),
                 decoration: BoxDecoration(color: Colors.green),
               ),
-              ),
-              Container( child:
               ListTile(
                 title: Text("First"),
                 onTap: () {
                   Navigator.pop(context);
                 },
               ),
-              ),
-              Container( child:
               ListTile(
                 title: Text("Second"),
                 onTap: () {
                   Navigator.pop(context);
                 },
               ),
-              ),
-              Container( child:
               MyWidget(),
-              ),
             ],
-              
           ),
         ),
         body: new DefaultTabController(
