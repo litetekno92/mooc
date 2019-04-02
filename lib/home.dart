@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'models/category_model.dart';
 import 'services/category_services.dart';
 import 'dart:async';
+import 'widgets/mywidget.dart';
 
 class MyHomePage extends StatelessWidget {
   final String title;
@@ -36,7 +37,8 @@ class MyHomePage extends StatelessWidget {
                 onTap: () {
                   Navigator.pop(context);
                 },
-              )
+              ),
+              MyWidget(),
             ],
           ),
         ),
